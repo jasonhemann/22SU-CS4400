@@ -11,7 +11,6 @@ hold office hours remotely. Our TA staff will use the [Khoury Office
 Hours system](https://khouryofficehours.com/), helping students on a
 first-come, first-serve basis.
 
-
 ### Ryan
 
 I will be holding office hours on Wednesday 6pm-8pm EST.
@@ -25,7 +24,6 @@ However, you don't need to wait a week to talk to me. Here's how you can reach m
 
 I will almost always be free to answer questions and meet during key times (right before homeworks are due and in the week preceeding exams).
 
-----
 
 {% raw %}
 
