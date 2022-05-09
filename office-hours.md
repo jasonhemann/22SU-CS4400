@@ -11,6 +11,7 @@ hold office hours remotely. Our TA staff will use the [Khoury Office
 Hours system](https://khouryofficehours.com/), helping students on a
 first-come, first-serve basis.
 
+### Jason
 
 {% raw %}
 
@@ -18,5 +19,17 @@ first-come, first-serve basis.
 
 {% endraw %}
 
+### Ryan
+
+I will active on Khoury Office Hours Wednesdays 6pm-8pm EST.
+
+However, you don't need to wait a week to talk to me. Here's how you can reach me when I'm not holding OH, in order of preference:
+
+1. See me after class, we can talk outside the classroom. I'll be in lecture most days until May 20th.
+2. [Book a time to meet with me](https://calendly.com/jung-ry/meeting).
+3. Send an [email](https://matt.might.net/articles/how-to-email/) to `jung.ry@northeastern.edu`.
+4. DM me on Teams 🤮.
+
+I will almost always be free to answer questions and meet during key times (right before homeworks are due and in the week preceeding exams).
 
 ![Effective Office Hours](https://raw.githubusercontent.com/jasonhemann/21FA-CS3800/master/assets/images/office-hours.jpeg "Logic in everyday life!")
