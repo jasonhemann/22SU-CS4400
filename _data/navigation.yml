@@ -7,9 +7,9 @@ main:
   - title: "Office Hours"
     url: /office-hours/
   - title: "Schedule"
-    url: /schedule/    
+    url: /schedule/
 
-# sidebar links    
+# sidebar links
 sidebar-site-map:
   - title: "Homework"
     url: /hw/
@@ -20,7 +20,7 @@ sidebar-site-map:
   - title: "Schedule"
     url: /schedule/
   - title: "Piazza"
-    url: https://piazza.com/class/ijeot3vehoi640
+    url: https://piazza.com/class/l2yo1imwooz606
   - title: "People"
     url: /people/
   - title: "Syllabus"
