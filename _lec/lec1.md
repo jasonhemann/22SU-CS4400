@@ -1,6 +1,6 @@
 ---
 title: Class intro; Racket 101
-date: 2021-09-08
+date: 2022-05-09
 ---
 
 # Objectives

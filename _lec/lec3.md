@@ -1,6 +1,6 @@
 ---
 title: Free, bound, and lexical address
-date: 2021-09-15
+date: 2022-05-11
 ---
 
 # Questions and Update
