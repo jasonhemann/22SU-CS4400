@@ -18,3 +18,5 @@ first-come, first-serve basis.
 
 {% endraw %}
 
+
+![Effective Office Hours](https://raw.githubusercontent.com/jasonhemann/21FA-CS3800/master/assets/images/office-hours.jpeg "Logic in everyday life!")
