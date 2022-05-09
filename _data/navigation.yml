@@ -20,7 +20,7 @@ sidebar-site-map:
   - title: "Schedule"
     url: /schedule/
   - title: "Piazza"
-    url: https://piazza.com/class/krqrpavf6694if
+    url: http://example.com
   - title: "People"
     url: /people/
   - title: "Syllabus"
@@ -30,7 +30,7 @@ sidebar-site-map:
   - title: "FAQ"
     url: /FAQ/
   - title: "Site Source"
-    url: https://github.ccs.neu.edu/jhemann/21FA-CS4400
+    url: https://github.com/jasonhemann/22SU-CS4400
   - title: "Enrichment"
     url: /enrichment/
   - title: "How's My Driving?"
