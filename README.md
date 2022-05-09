@@ -1,6 +1,6 @@
-# 21FA-CS4400
+# 22SU-CS4400
 
-Repository for Hemann's Fall 2021 edition of CS4400
+Repository for Hemann's Summer 2022 edition of CS4400
 
 # Dependencies
 
