@@ -33,3 +33,11 @@ However, you don't need to wait a week to talk to me. Here's how you can reach m
 I will almost always be free to answer questions and meet during key times (right before homeworks are due and in the week preceeding exams).
 
 ![Effective Office Hours](https://raw.githubusercontent.com/jasonhemann/21FA-CS3800/master/assets/images/office-hours.jpeg "Logic in everyday life!")
+
+### Cindy
+
+I will be holding my office hours Thurdays 12-2pm EST.
+
+You can also send me an email at `luo.xiny@northeastern.edu` if you have any other questions outside of my office hours. I will be happy to meet virtually or in person if I am available :)
+
+I might be _hard_ to reach out from teams, but I usually respond to emails pretty fast :) If I don't reply within a day, feel free to shoot me another email when necessary!
