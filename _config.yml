@@ -86,9 +86,10 @@ author:
   location         : "Northeastern University"
   email            : "jhemann@northeastern.edu"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://hemann.pl"
+    # the URL is being squatted :(
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://hemann.pl"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jhemann"

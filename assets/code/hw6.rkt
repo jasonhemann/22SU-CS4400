@@ -1,5 +1,6 @@
 #lang racket
-
+(require rackunit)
+(require racket/trace)
 #| Assignment 6: Continuation-Passing Style |#
 
 ;; Say you're in the kitchen in front of the refrigerator, thinking
@@ -41,7 +42,7 @@
           (error 'empty-k "You can only invoke the empty continuation once")
           (begin (set! once-only #t) v)))))
 
-#| call/cc and let/cc |#
+#| let/cc |#
 
 ;; 1. Complete the following definition of last-non-zero, a function
 ;; which takes a list of numbers and returns the last cdr whose car is
@@ -53,7 +54,7 @@
 ;; beyond adding a body. You may of course add newlines as needed. My
 ;; advice is to 1. Get it working for the base case. 2 Get it working
 ;; for a list without any 0s in it. 3. Get it working for a list with
-;; one 0 in it. 3. Get it working for a list with more than one 0 in
+;; one 0 in it. 4. Get it working for a list with more than one 0 in
 ;; it.
 
 (define (last-non-zero ls)
@@ -65,6 +66,29 @@
            )))
       (lnz ls))))
 
+  (test-equal?
+   "test for empty list
+   (last-non-zero '())"
+   (last-non-zero '())
+   '())
+
+  (test-equal?
+   "test for a non-empty list with no zeroes
+   (last-non-zero '(1 2 3 4 5))"
+   (last-non-zero '(1 2 3 4 5))
+   '(1 2 3 4 5))
+
+  (test-equal?
+   "test for a list with one zero in the middle
+   (last-non-zero '(1 2 3 0 4 5))"
+   (last-non-zero '(1 2 3 0 4 5))
+   '(4 5))
+
+  (test-equal?
+   "test for a list with two zeroes in the middle
+   (last-non-zero '(1 0 2 3 0 4 5))"
+   (last-non-zero '(1 0 2 3 0 4 5))
+   '(4 5))
 
 
 #| Direct vs. accumulator-passing vs. call/cc. |# 
@@ -81,10 +105,10 @@
 ;; as needed. For this problem, you should use my-* as your
 ;; multiplication operation. 
 
+(define (my-* m n)
+  (* m n))
 
 #| 
-> (define (my-* m n)
-    (* m n))
 > (define (mult n*)
     (letrec
       ((m
@@ -161,7 +185,7 @@ required to do so.
 
 |#
 
-;; 4. Define and test a procedure walk-cps that is a CPSed version of
+;; 3. Define and test a procedure walk-cps that is a CPSed version of
 ;; the following walk procedure:
 
 (define walk
@@ -316,17 +340,19 @@ s
 ;; be serious, so include the following helper definitions when
 ;; testing your code.
 
+
+(define empty?-cps
+  (λ (ls k)
+    (k (empty? ls))))
+(define car-cps
+  (λ (pr k)
+    (k (car pr))))
+(define cdr-cps
+  (λ (pr k)
+    (k (cdr pr))))
+
 #| 
 
-> (define empty?-cps
-    (λ (ls k)
-      (k (empty? ls))))
-> (define car-cps
-    (λ (pr k)
-      (k (car pr))))
-> (define cdr-cps
-    (λ (pr k)
-      (k (cdr pr))))
 > (unfold-cps empty?-cps car-cps cdr-cps '(a b c d e) (empty-k))
 (e d c b a)
 
@@ -358,8 +384,8 @@ s
   (λ (v w s)
     (cond
       [(eqv? v w) s]
-      [(symbol? v) (cons `(,x . ,v) s)]
-      [(symbol? w) (cons `(,x . ,v) s)]
+      [(symbol? v) (cons `(,v . ,w) s)]
+      [(symbol? w) (cons `(,w . ,v) s)]
       [(and (cons? v) (cons? w))
        (let ((s (unify (walk (car v) s) (walk (car w) s) s)))
          (cond
@@ -402,7 +428,7 @@ s
 (define use-of-M
   ((M (λ (n) (add1 n))) '(1 2 3 4 5)))
 
-#| Brainteasers |# 
+#| Brainteasers 5400 Only |# 
 
 ;; 16. CPS the following program, and call it strange-cps:
 
