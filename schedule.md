@@ -41,5 +41,5 @@ classes: wide
 | SAOP | "Scheme and the Art of Programming"   |
 
 <img src="https://imgs.xkcd.com/comics/x.png">
-`
+
 
