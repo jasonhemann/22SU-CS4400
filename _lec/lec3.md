@@ -93,11 +93,11 @@ not a recursive position in our datatype.
 |-------------------------|--------|----|--------------------------|---------|
 | Is there a reference to |        | in |                          | ? (Y/N) |
 |-------------------------|--------|----|--------------------------|---------|
-|                         | z      |    | (lambda (z) x)           |         |
-|                         | x      |    | x                        |         |
-|                         | y      |    | (lambda (x) y)           |         |
-|                         | z      |    | (lambda (z) (x y)        |         |
-|                         | lambda |    | (lambda (lambda) lambda) |         |
+|                         | z      |    | (lambda (z) x)           | N       |
+|                         | x      |    | x                        | Y       |
+|                         | y      |    | (lambda (x) y)           | Y       |
+|                         | z      |    | (lambda (z) (x y)        | N       |
+|                         | lambda |    | (lambda (lambda) lambda) | Y       |
 |-------------------------|--------|----|--------------------------|---------|
 
 #  Free variable references, bound variable references 
