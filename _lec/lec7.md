@@ -1,13 +1,11 @@
 ---
 title: (Lexical vs) Dynamic Scope
-date: 2021-09-29
+date: 2022-05-18
 ---
 
 
 # Questions
 
--   Homework - coming due Wednesday.
--   I deputize you to explain and to help others.
 
 # Y Combinator
 
@@ -16,9 +14,9 @@ date: 2021-09-29
  understand what's going on.
 
 ```racket
-(lambda (x) 
+(lambda (x)
   (lambda (y)
-    (lambda (z) 
+	(lambda (z)
 	  ((((x y) (z w)) ((a b) (p q)))))))
 ```
 
@@ -28,13 +26,13 @@ date: 2021-09-29
 
 <your-fav-lambda-expression> = (((K K) S) (S (S K)))
 
-(define Y ...) 
+(define Y ...)
 
 
-;; To get around the lack of define in our PL 
+;; To get around the lack of define in our PL
 (define !
   (lambda (n)
-    (if (zero? n)
+	(if (zero? n)
 	  1
 	  (* n (! (sub1 n))))))
 
@@ -66,41 +64,41 @@ date: 2021-09-29
 ;; ([Listof X] -> Nat) -> ([Listof X] -> Nat)
 (lambda (len)
   (lambda (ls)
-    (if (empty? ls)
-       0
-       (add1 (len (cdr ls))))))
+	(if (empty? ls)
+	   0
+	   (add1 (len (cdr ls))))))
 
 ;; (Nat -> Nat) -> (Nat -> Nat)
 ((lambda (!)
    (lambda (n)
-     (if (zero? n)
+	 (if (zero? n)
 	1
 	(* n (! (sub1 n))))))
  <some real-honest-to-goodness-factorial-function>)
 
 (lambda (!)
    (lambda (n)
-     (if (zero? n)
+	 (if (zero? n)
 	1
 	(* n ((lambda (n)
-                (if (zero? n)
-                    1
-                    (* n (! (sub1 n)))))
-              (sub1 n))))))
+				(if (zero? n)
+					1
+					(* n (! (sub1 n)))))
+			  (sub1 n))))))
 
    (lambda (n)
-     (if (zero? n)
+	 (if (zero? n)
 	1
 	(* n (! (sub1 n)))))
 
    (lambda (n)
-     (if (zero? n)
+	 (if (zero? n)
 	1
 	(* n (if (zero? (sub1 n))
-                 1
-                 (* (sub1 n) (! (sub1 (sub1 n))))))))
+				 1
+				 (* (sub1 n) (! (sub1 (sub1 n))))))))
 
-;; Omega 
+;; Omega
 ((lambda (x) (x x)) (lambda (x) (x x)))
 
 
@@ -119,7 +117,7 @@ date: 2021-09-29
 
 ;; The "call by value Y combinator"
 
-(lambda (f) 
+(lambda (f)
   ((lambda (x) (f (λ (y) ((x x) y))))
    (lambda (x) (f (λ (y) ((x x) y))))))
 ```
@@ -141,21 +139,21 @@ date: 2021-09-29
 
 (define (valof exp env)
   (match exp
-    [`(* ,n1 ,n2) (* (valof n1 env) (valof n2 env))]
-    [`(sub1 ,n1) (sub1 (valof n1 env))]
-    [`(zero? ,n1) (zero? (valof n1 env))]
-    [`,y #:when (symbol? y) (env y)]
-    [`,n #:when (number? n) n]
-    [`(if ,n1 ,n2 ,n3) (if (valof n1 env) (valof n2 env) (valof n3 env))]
-    [`(let ([,x ,e]) ,body) 
+	[`(* ,n1 ,n2) (* (valof n1 env) (valof n2 env))]
+	[`(sub1 ,n1) (sub1 (valof n1 env))]
+	[`(zero? ,n1) (zero? (valof n1 env))]
+	[`,y #:when (symbol? y) (env y)]
+	[`,n #:when (number? n) n]
+	[`(if ,n1 ,n2 ,n3) (if (valof n1 env) (valof n2 env) (valof n3 env))]
+	[`(let ([,x ,e]) ,body)
 	  (let ([a (valof e env)])
-        (valof body (extend-env x a env)))]
-    [`(lambda (,x) ,body) (λ (a env^) (valof body (extend-env x a env^)))]
-    [`(,rator ,rand) ((valof rator env) (valof rand env) env)]))
+		(valof body (extend-env x a env)))]
+	[`(lambda (,x) ,body) (λ (a env^) (valof body (extend-env x a env^)))]
+	[`(,rator ,rand) ((valof rator env) (valof rand env) env)]))
 
 (define (empty-env)
-  (λ (y) 
-    (error 'empty-env "unbound identifier ~s\n" y)))
+  (λ (y)
+	(error 'empty-env "unbound identifier ~s\n" y)))
 ```
 
 
@@ -164,16 +162,16 @@ date: 2021-09-29
   1. Programmers are no longer free to choose their own variable names.
 
   2. A programmer can no longer, in general, determine the value of a
-     given expression without evaluating the whole program. 
+	 given expression without evaluating the whole program.
 
   2. Programmers can no longer safely focus on understanding a small
-     part of the program in isolation. 
-	 
+	 part of the program in isolation.
+
   3. Implementations suffer, as environment lookup becomes more
-     expensive and we loose much of the "cactus stack" discipline of
-     our lexically-scoped environments.
-	 
-	 
+	 expensive and we loose much of the "cactus stack" discipline of
+	 our lexically-scoped environments.
+
+
 
 ## Syntax vs. Semantics
 

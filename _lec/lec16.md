@@ -1,53 +1,47 @@
 ---
 author: Jason Hemann
-title: ParentheC
-date: 2021-11-08
+title: Trampolining
+date: 2022-06-06
 ---
 
-# The rest of the program ... 
+# Questions? Let\'s do them!
 
+-   This is an important thing for you to get, and to get right.
+-   I see a lot of people without submissions so far. Let\'s get on it!
+-   The second part also will take some time, especially if you are
+    doing it by hand!
 
-## We assume the 7th assignment. 
+# Walking through, where we last left our heroes.
 
-We assume you have this in the right format from the 7th
-assignment. If not, it's time to get it there. To recap, let's go get
-it there.
+Either pretend we had a program that was already CPSed, with
+data-structure continuations. Or this could also serve as a refresher.
 
-## Additional changes:
+# The new stuff.
 
-  1. Load `parenthec`
-  2. Transform every `match` expression into a `union-case`
-     `union-case <var> <union>`. You must precede each constructor
-     invocation w/the name of the union, w/a literal `_`. I know. It's
-     a
-     [load-bearing](https://frinkiac.com/video/S08E08/f6IcBG4MPz6-WQBf5vIGQrrxuGA=.gif)
-     underscore.
-  3. `let*`, and construct a `main` that produces the output, and takes no parameters. 
-  4. `(define-registers n k v)`, `set!`s, thunks.
-  5. `(define-label`
-  6. `(define-program-counter pc)` (set! pc)
-  7. Don't assign `k` in the `main`, instead `mount-trampoline` w/name of constructor, `k` var, and `pc`
-  8. `(empty-k )` has to take a j, so that we can pass it along, and `(dismount-trampoline j)` in end case.
-  9. Make sure you `print` out the answer you get there. 
-	 
+We can discuss this in the context of registerization, but we don\'t
+have to. This is somewhat cleaner.
 
-```
-  ;; one additional thing to bear in mind. 
-  ;; every place you /construct/ a continuation
-  ;; <union-name>_ . A Literal underscore ಠ_ಠ
-```
+We have unbounded amounts of computation. Infinite loops cannot be
+universally ruled out as bad data. Moreover, a finite of any size and
+depth that produces a value is also allowed. So what do we do?
 
+## Interlude: Charlie!
 
-## Then 
+## The trampoline.
 
-Load `"pc2c.ss"`. Then, in the repl.
+The pure trampoline.
 
-```
-> (pc2c "foo.pc" "foo.c" "foo.h")
+``` {racket}
+(define (trampoline th)
+  (trampoline (th)))
 ```
 
-## Booking meetings:
+The real question: For the marbles .... how do we get out of an infinite
+loop?
 
-Book a meeting [here](v2.waitwhile.com/book/4400).
- 
- 
+## What about several computations?
+
+-   in sequence?
+-   in parallel?
+-   at random?
+-   What about more stringent requirements still?

@@ -1,12 +1,12 @@
 ---
 author: Jason Hemann
 title: Macros
-date: 2021-11-10
+date: 2022-06-17
 ---
 
 An exploration of macros, and some debugging tips from them.
 
-# Macro expansion time is different than run-time. 
+# Macro expansion time is different than run-time.
 
 ```
 ;; (define (my-thunkify x)

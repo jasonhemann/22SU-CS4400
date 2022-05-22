@@ -28,6 +28,6 @@ current and upcoming future trends.
 ## Lecture
 
 
- | Lecture | Instructor | Dates | Time       | Location        |
- |  10545  | Jason      | MW    | 2:50-4:30  | 129 Hurtig Hall |
+ | Lecture | Instructor | Dates | Time       | Location          |
+ | 41568   | Jason      | MTWR  | 9:50-11:30 | 233 Richards Hall |
 

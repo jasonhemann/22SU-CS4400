@@ -1,8 +1,33 @@
 ---
 author: Jason Hemann
-title: Registerizing
-date: 2021-03-15
+title: RI wrt K
+date: 2022-06-01
 ---
 
+# Opening act
 
-See extended lecture notes and video on performing this transformation
+## Getting some great questions.
+
+-   What else?
+
+# Recap-CPS
+
+## Let\'s go wild!
+
+CPS me :-)
+
+``` {racket}
+(lambda (f)
+  ((lambda (x) (x x))
+   (lambda (x) (f (lambda (y) ((x x) y))))))
+```
+
+# Recap CPSing the interpreter, + two new features. 
+
+## `let/cc` 
+
+## `throw` 
+
+# Defunctionalize, RI continuations:
+
+See in-class development and the notes posted online 

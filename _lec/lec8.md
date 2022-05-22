@@ -1,27 +1,13 @@
 ---
 title: Equational reasoning and higher order functions
-date: 2021-10-04
+date: 2022-05-19
 ---
-
-# A couple of notes.
-
-## Website: Changed
-
-CCS Github is a jerkface.
-
-## Gradescope Grading Scale: Updated phrasing
-
-Now phrases should better reflect what you're seeing.
-
-## Canvas Grading Scale
-
-Now 0-9.
 
 ## Racket's `match`
 
 [Cf.](https://www.python.org/dev/peps/pep-0636/ "Python match")
 
-## 
+##
 
 
 
@@ -32,11 +18,11 @@ Now 0-9.
 
 ## `times`
 
-## `expt` 
+## `expt`
 
-## Generalizing 
+## Generalizing
 
-### This is not news. 
+### This is not news.
 
   - Wilhelm Ackermann
   - Gabriel Sudan
@@ -44,11 +30,11 @@ Now 0-9.
 ```racket
 (define (phi p m n)
   (cond
-    [(zero? p) (+ m n)]
-    [(and (zero? n) (zero? (sub1 p))) 0]
-    [(and (zero? n) (zero? (sub1 (sub1 p)))) 1]
-    [(zero? n) m]
-    [else (phi (sub1 p) m (phi p m (sub1 n)))]))
+	[(zero? p) (+ m n)]
+	[(and (zero? n) (zero? (sub1 p))) 0]
+	[(and (zero? n) (zero? (sub1 (sub1 p)))) 1]
+	[(zero? n) m]
+	[else (phi (sub1 p) m (phi p m (sub1 n)))]))
 ```
 
 > After Ackermann's publication of his function (which had three
@@ -64,8 +50,7 @@ Now 0-9.
 ```racket
 (define (ack-peter m n)
   (cond
-    [(zero? m) (add1 n)]
-    [(zero? n) (ack-peter (sub1 m) 1)]
-    [else (ack-peter (sub1 m) (ack-peter m (sub1 n)))]))
+	[(zero? m) (add1 n)]
+	[(zero? n) (ack-peter (sub1 m) 1)]
+	[else (ack-peter (sub1 m) (ack-peter m (sub1 n)))]))
 ```
-
