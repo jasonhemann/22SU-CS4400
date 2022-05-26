@@ -17,10 +17,10 @@ below.
 ### Jason
 
 I'll be active on Khoury Office Hours Tuesdays 12pm-2pm Eastern. I'll
-also be in my office during that time, so we can meet and talk in
-person if you prefer, and if people come to both I'll trade off or
-combine when I can. I'm also available outside of those hours by
-appointment. Email preferred. 
+also be in my office (West Village H #326) during that time, so we can 
+meet and talk in person if you prefer. If people come to both I'll 
+trade off or combine when I can. I'm also available outside of those 
+hours by appointment. Email preferred. 
 
 ### Ryan
 
