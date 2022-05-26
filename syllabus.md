@@ -287,12 +287,13 @@ of them.
 
 ### Scheduled Office Hours
 
-Course personnel will make ourselves available for 4-6 hours of
-[office hours]({{ site.baseurl}}/office-hours/) available weekly,
-concentrated toward assignment due dates. If our office hours schedule
-in particularly ill-suited to your class schedule, let me know and we
-may be able to adjust them. As per current university guidance, we
-will hold these office hours remotely.
+Course personnel will make ourselves available online for 4-6 hours of 
+office hours available weekly, concentrated toward assignment due dates. 
+If our office hours schedule is particularly ill-suited to your class 
+schedule, let me know and we may be able to adjust it. I'll also be 
+available in West Village H #326 during my office hours. Please see 
+the [office hours page]({{ site.baseurl }}/office-hours/) for the
+most current and detailed policies.
 
 ### Gradescope
 
