@@ -4,13 +4,13 @@ layout: single
 classes: wide
 ---
 
-### Ancillary/Supplementary Videos 
+### Ancillary/Supplementary Videos
 
  - [Micinski on cons/improper lists/diagrams](https://www.youtube.com/watch?v=7NA9HZdlR0g)
  - [Continuations: the Swiss Army Knife of Flow Control](https://www.youtube.com/watch?v=Ju3KKu_mthg)
  - [Byrd's Tutorial on the CPS Transformation](https://youtu.be/2GfFlfToBCo?t=4538)
 
-### Enrichment 
+### Enrichment
 
 
 
@@ -38,9 +38,11 @@ classes: wide
 - [Hunting the history of Moses Schönfinkel](https://writings.stephenwolfram.com/2020/12/where-did-combinators-come-from-hunting-the-story-of-moses-schonfinkel/)
 - [Kleene's "Church predecessor" via a trip to the dentist](http://link.springer.com/chapter/10.1007%2FBFb0062850)
 
-- [Someone else's explanation of the CPS transformation](https://www.cs.bgu.ac.il/~ppl202/wiki.files/class/notebook/4.2CPS.html)
+- [Someone else's explanation of the CPS transformation](https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)§4.2
 - [A first-order one-pass CPS transformation](https://link.springer.com/content/pdf/10.1007/3-540-45931-6_8.pdf)
 - [Why continuations are coming to Java](https://www.youtube.com/watch?v=9vupFNsND6o)
+- [No-brainer CPS Conversion](https://www.ccs.neu.edu/home/shivers/papers/nobrainer-cps.pdf)
+
 
 - [Lambda: the Ultimate GOTO](https://web.archive.org/web/20110718095430/http://repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-443.pdf)
 - [CONS should not cons its arguments pt II: Cheney on the MTA](https://dl.acm.org/doi/10.1145/214448.214454)
@@ -59,7 +61,7 @@ classes: wide
 - [A Profile of Mathematical Logic](https://store.doverpublications.com/0486434753.html) (A fun, quick-ish read on the story of modern logic)
 - [The Search for Mathematical Roots, 1870-1940: Logics, Set Theories and the Foundations of Mathematics from Cantor through Russell to Gödel](https://press.princeton.edu/books/paperback/9780691058580/the-search-for-mathematical-roots-1870-1940) (A grown-up text on much of the same.)
 - [Philosophy of Computer Science](https://cse.buffalo.edu/~rapaport/Papers/phics.pdf) (Draft text)
-- [Logicomix](https://en.wikipedia.org/wiki/Logicomix) (It's a comic about Russell and early 20th century mathematical logic. ᕕ( ᐛ )ᕗ) 
+- [Logicomix](https://en.wikipedia.org/wiki/Logicomix) (It's a comic about Russell and early 20th century mathematical logic. ᕕ( ᐛ )ᕗ)
 
 - [History of Lambda Calculus and Combinatory Logic](https://hope.simons-rock.edu/~pshields/cs/cmpt312/cardone-hindley.pdf)
 - [SKI Combinator Tetris](https://dirk.rave.org/combinatris/)
@@ -71,7 +73,7 @@ classes: wide
 
 - Chiang's short story ["Seventy-two Letters"](https://ia802706.us.archive.org/33/items/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf) ([Audio version](https://archive.org/details/TedChiangSeventyTwoLetters))
 
-Additional online textbooks with relevant sections/explanations. 
+Additional online textbooks with relevant sections/explanations.
 
 - [PPL Notes](https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)
 - Krishnamurthi's [PLAI](http://cs.brown.edu/courses/cs173/2012/book/)
@@ -79,4 +81,3 @@ Additional online textbooks with relevant sections/explanations.
 
 
 "All language designers are arrogant.  Goes with the territory..." -- Larry Wall
-
