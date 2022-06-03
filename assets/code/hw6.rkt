@@ -13,21 +13,21 @@
 ;; counter, and all the materials used to make it are gone. So you eat
 ;; it.
 
-;; -- Luke Palmer 
+;; -- Luke Palmer
 
 
-#| Assignment Guidelines |# 
+#| Assignment Guidelines |#
 
 ;; When CPSing, you may treat built-in procedures such as empty?,
 ;; add1, assv, car, <, and the like as "simple".
-   
+
 ;; No, you may not "simplify" or rewrite any of these programs to
 ;; another form and then CPS that simpler formula instead. Use the
 ;; method we described in class.
 
 ;; Test your CPSed procedures using the initial continuation returned
 ;; from the following (uncommented) empty-k. You may have seen empty-k
-;; defined as 
+;; defined as
 
 ;; (define (empty-k)
 ;;   (λ (v) v))
@@ -38,7 +38,7 @@
 (define (empty-k)
   (let ((once-only #f))
     (λ (v)
-      (if once-only 
+      (if once-only
           (error 'empty-k "You can only invoke the empty continuation once")
           (begin (set! once-only #t) v)))))
 
@@ -62,7 +62,7 @@
     (letrec
       ((lnz
          (λ (ls)
-           ;; complete the definition	     
+           ;; complete the definition
            )))
       (lnz ls))))
 
@@ -91,7 +91,7 @@
    '(4 5))
 
 
-#| Direct vs. accumulator-passing vs. call/cc. |# 
+#| Direct vs. accumulator-passing vs. call/cc. |#
 
 ;; 2. Consider the following definitions of mult and mult/acc, a
 ;; function which takes a list of numbers and returns the product,
@@ -103,12 +103,12 @@
 ;; member-like operations or last-non-zero. You must not modify the
 ;; provided code beyond adding a body. You may of course add newlines
 ;; as needed. For this problem, you should use my-* as your
-;; multiplication operation. 
+;; multiplication operation.
 
 (define (my-* m n)
   (* m n))
 
-#| 
+#|
 > (define (mult n*)
     (letrec
       ((m
@@ -119,7 +119,7 @@
              (else (my-* (car n*) (mult (cdr n*))))))))
       (m n*)))
 > (define (mult/acc n*)
-    (letrec 
+    (letrec
       ((m/acc
          (λ (n* acc)
            (cond
@@ -127,7 +127,7 @@
              ((zero? (car n*)) 0)
              (else (m/acc (cdr n*) (my-* (car n*) acc)))))))
       (m/acc n* 1)))
-|# 
+|#
 
 
 (define (mult/cc n*)
@@ -136,7 +136,7 @@
       ((m/cc
          (λ (n*)
            ;; complete the definition.
-           ;; For this problem, use my-* as your mult operator 
+           ;; For this problem, use my-* as your mult operator
            )))
       (m/cc n*))))
 
@@ -146,7 +146,7 @@
 ;; multiplications until they reach a 0, yet mult/cc performs //no//
 ;; multiplications in the presence of a 0. Which is neat.
 
-#| 
+#|
 > (require racket/trace)
 > (trace-define (my-* m n)
     (* m n))
@@ -172,11 +172,11 @@
 0
 > (mult/cc '(1 2 3 4 0 6 7 8 9))
 0
-|# 
+|#
 
 #| CPS |#
 
-#| 
+#|
 
 In this portion of the assignment, you will also have to construct and
 submit your own tests. We use the explicit `λ` syntax here
@@ -200,7 +200,7 @@ required to do so.
 
 ;; Here are some sample calls to walk:
 
-#| 
+#|
 
 > (walk 'a '((a . 5) (b . 6) (c . 7)))
 5
@@ -211,7 +211,7 @@ s
 > (walk 'a '((a . q) (r . s) (q . r) (s . 10)))
 10
 
-|# 
+|#
 
 ;; 4. Define and test a procedure times-cps that is a CPSed version of
 ;; the following times procedure.
@@ -230,12 +230,12 @@ s
 ;; violates the standard rules of CPSing the program, it provides an
 ;; interesting look at optimizations CPSing allows us: The
 ;; whole-program CPS transformation permits you the kinds of control
-;; operations in languages that don't natively support them. 
+;; operations in languages that don't natively support them.
 
 
 
 ;; 6. Define and test a procedure cexpt-cps that is a CPSed version of
-;; the following cexpt procedure. 
+;; the following cexpt procedure.
 
 (define cexpt
   (λ (m)
@@ -244,14 +244,14 @@ s
 
 ;; Here are some examples of calls to cexpt:
 
-#| 
+#|
 
 > ((cexpt 2) 3)
 8
 > ((cexpt ((cexpt 2) 3)) 2)
 64
 
-|# 
+|#
 
 ;; 7. Define and test a procedure count-syms*-cps that is a CPSed
 ;; version of the following count-syms* procedure:
@@ -266,7 +266,7 @@ s
 
 ;; Here are some example calls to count-syms*
 
-#| 
+#|
 
 > (count-syms* '(a 1 b 2 c 3))
 3
@@ -275,7 +275,7 @@ s
 > (count-syms* '(1 (b (3 (d (5 e) 7) (g)) 9) ((h))))
 5
 
-|# 
+|#
 
 ;; 8. Define and test a procedure cons-cell-count-cps that is a CPSed
 ;; version of the following cons-cell-count procedure:
@@ -283,7 +283,7 @@ s
 (define cons-cell-count
   (λ (ls)
     (cond
-      [(cons? ls) 
+      [(cons? ls)
        (add1 (+ (cons-cell-count (car ls)) (cons-cell-count (cdr ls))))]
       [else 0])))
 
@@ -311,8 +311,8 @@ s
        (fib fib n))
      (λ (fib n)
        (cond
-	 [(< n 2) n]
-	 [else (+ (fib fib (sub1 n)) (fib fib (sub1 (sub1 n))))])))))
+     [(< n 2) n]
+     [else (+ (fib fib (sub1 n)) (fib fib (sub1 (sub1 n))))])))))
 
 ;; 11. Define and test a procedure unfold-cps that is a CPSed version
 ;; of the following unfold procedure:
@@ -323,13 +323,13 @@ s
        ((h h) seed '()))
      (λ (h)
        (λ (seed ans)
-	 (if (p seed)
-	     ans
-	     ((h h) (g seed) (cons (f seed) ans))))))))
+     (if (p seed)
+         ans
+         ((h h) (g seed) (cons (f seed) ans))))))))
 
 ;; An example of its use is demonstrated below:
 
-#| 
+#|
 
 > (unfold empty? car cdr '(a b c d e))
 (e d c b a)
@@ -351,12 +351,12 @@ s
   (λ (pr k)
     (k (cdr pr))))
 
-#| 
+#|
 
 > (unfold-cps empty?-cps car-cps cdr-cps '(a b c d e) (empty-k))
 (e d c b a)
 
-|# 
+|#
 
 
 ;; 12. Define and test a procedure pascal-cps that is a CPSed version
@@ -396,7 +396,7 @@ s
 
 ;; Here are some example calls to unify:
 
-#| 
+#|
 
 > (unify 'x 5 '())
 ((x . 5))
@@ -407,7 +407,7 @@ s
 > (unify '(x y z) '(5 x y) '())
 ((z . 5) (y . 5) (x . 5))
 
-|# 
+|#
 
 ;; 14. Define and test a procedure M-cps that is a CPSed version of M,
 ;; which is a curried version of map. Assume for the CPSed version
@@ -423,12 +423,14 @@ s
 ;; 15. Consider the corresponding call to M, called use-of-M. Using
 ;; your CPSed M-cps, re-write use-of-M to call M-cps, and make all the
 ;; appropriate changes (including CPSing the argument). Name it
-;; use-of-M-cps
+;; use-of-M-cps. Treat this like an expression, so you should have one
+;; and only one use of empty k in your answer. Like use-of-M, your
+;; answer will not be a λ-expression.
 
 (define use-of-M
   ((M (λ (n) (add1 n))) '(1 2 3 4 5)))
 
-#| Brainteasers 5400 Only |# 
+#| Brainteasers 5400 Only |#
 
 ;; 16. CPS the following program, and call it strange-cps:
 
@@ -459,7 +461,7 @@ s
 ;; To get you started, you may find it useful to see the
 ;; following-call to why.
 
-#| 
+#|
 
 > (define almost-length
     (λ (f)
@@ -470,11 +472,8 @@ s
 > ((why almost-length) '(a b c d e))
 5
 
-|# 
+|#
 
-#| Just Dessert |# 
+#| Just Dessert |#
 
 ;; 19. CPS why-cps, and call it why-cps-cps.
-
-
-
