@@ -7,7 +7,7 @@ Repository for Hemann's Summer 2022 edition of CS4400
 # Dependencies
 
 
-# Building 
+# Building
 
 To build this site locally, copy or clone this repository, and then
 execute `jekyll build` from within the top directory. You may prefer
