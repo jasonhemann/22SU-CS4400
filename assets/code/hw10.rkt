@@ -1,12 +1,12 @@
 #lang racket
 
-#| Object-oriented Programming |# 
+#| Object-oriented Programming |#
 
 ;; I invented the term 'Object-Oriented', and I can tell you I did not
 ;; have C++ in mind.
 
 ;; Alan Kay
- 
+
 #| Assignment Guidelines |#
 
 ;; This is a slight extension of our development from class
@@ -45,7 +45,7 @@
          [else try]))]))
 
 ;; This is an implementation of Program 12.2. I translate it to
-;; slightly more modern Racket. 
+;; slightly more modern Racket.
 
 (define (box-maker init)
   (let ([contents init])
@@ -94,7 +94,7 @@
 ;; (send-message s1 'peek)
 (send-message s2 'type)
 
-;; #| Problems |# 
+;; #| Problems |#
 
 ;; 1. SAOP implements a two-pointer queue data structure directly. We
 ;; can instead implement a queue using two-stacks. The two-stack queue
@@ -112,7 +112,6 @@
 ;; receive messages.
 
 
-
 (define q (queue-maker 'abc 'def 'ghi))
 (send-message q 'type)
 (send-message q 'empty?)
@@ -126,10 +125,12 @@
 
 ;; 2. Since we already have a stack, and we already have a piece of
 ;; mutable state, and we darn well already have functions, let's build
-;; a DFA! Here's my plan. We can treat the tape as a stack that begins
+;; a DFA! Here's my plan. If you don't know what a DFA is, you can
+;; look it up on Wikipedia, but DFAs are equivalent in power to
+;; regular expressions. We can treat the tape as a stack that begins
 ;; with some data on it. We can treat the DFA's current state as the
 ;; thing inside some box. I thought about doing a PDA because of the
-;; stack but that's bothersome. We'll leave that for a future term. 
+;; stack but that's bothersome. We'll leave that for a future term.
 
 
 (define δ
@@ -151,12 +152,29 @@
 (send-message d 'advance!)
 (send-message d 'in-accept?)
 
+;; 3. Model some other feature of an OO language. We have modelled a
+;; variety of OO language features in this lecture and accompanying
+;; homework. But there are many more such features that we might want
+;; to try and model or design. Your job is to think of something that
+;; we haven't modelled, find a way to cleanly model it, implement your
+;; model, and describe what you've done. It would look like what we
+;; described in class for implementing message passing and method
+;; overriding. I have not thought about how to simulate all of these,
+;; or even how they would be possible or how much work is involved.
+;; You can pick something off of this list, or think of something
+;; else:
 
-
-;; #| Just Dessert |#
-
-;; ;; It won't be statically checked, but given two implementations of a
-;; ;; particular interface, we can imagine extending. Implement a visitor
-;; ;; here, and give us (yourself) a picture of what a visitor looks
-;; ;; like and what it's like to add functionality by visitor. 
+;; mixins
+;; design patterns (e.g. visitor)
+;; meta-object protocol
+;; `this` (the variant in class we described doesn't mix with late-binding; think about how you would add it)
+;; contracts
+;; try/catch
+;; access modifiers (public, protected, etc)
+;; friend functions
+;; virtual methods
+;; namespaces
+;; object cloning
+;; asyncronous message passing
+;; run-time code generation
 
