@@ -118,7 +118,7 @@ in value-of-cps. Use empty-env and empty-k when testing.
     with a tagged-list data structure representation. Consider first
     ensuring that the last two formal parameters to apply-env (y and k)
     are the same as the formal parameters to the inner functions in
-    extend-env and apply-env. Remember, if you add (else (env-cps y k)) as
+    extend-env and empty-env. Remember, if you add (else (env-cps y k)) as
     the last line of your match expression, you can test each
     transformation one at a time.
 
