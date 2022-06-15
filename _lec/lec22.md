@@ -15,8 +15,7 @@ I also want to know that you're on track. How's that going? Someone stuck?
 
 Reminder: If TRACE eval scores completion % >= 85% I'll add 2 overall grade points to class grade average.
 
-## Qs
-
+## Qs.
 
 # Types
 
