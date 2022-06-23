@@ -148,8 +148,8 @@ you one of your interpreter's clauses
 #|
 
 Think: Why is it that we can ensure all calls to valof-pe are finished
-completed before ever evaaluating an environment. Why /can't/ we make
-that guarantee about environments before continuations?
+(i.e. completed) before ever evaluating an environment. Why /can't/ we
+make that guarantee about environments before continuations?
 
 Answer:
 
