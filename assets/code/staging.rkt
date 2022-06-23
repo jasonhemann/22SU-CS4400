@@ -2,13 +2,13 @@
 (require rackunit-abbrevs)
 (require racket/trace)
 
-#| Staging and Partial Evaluation |# 
+#| Staging and Partial Evaluation |#
 
 ;; Never put off until run time what you can do at compile time.
-;; 
+;;
 ;; -- David Gries, in "Compiler Construction for Digital Computers",
 ;; circa 1969.
- 
+
 #| Assignment Guidelines |#
 
 ;; Throughout this assignment, I suggest you avoid eta reductions even
@@ -21,7 +21,7 @@
 
 ;; We have given you a traditional, 4400-style interpreter. It does
 ;; not match its test cases, though. It's test cases expect to take in
-;; its arguments /curried/ (or schönfinkeled, if you prefer). 
+;; its arguments /curried/ (or schönfinkeled, if you prefer).
 
 ;; 1. Rewrite the following interpreter so that it takes in its
 ;; arguments in a curried fashion. You should curry out the parameters
@@ -36,7 +36,7 @@
 ;; sides of an if expression. The test suite is inadequate, you must
 ;; add your own.
 
-#| 
+#|
 
 To further clarify this transformation, we have transformed here for
 you one of your interpreter's clauses
@@ -49,8 +49,8 @@ you one of your interpreter's clauses
             (((valof-cps nexp₂) env-cps)
              (λ (v₂)
                (k (* v₁ v₂))))))))]
-|# 
- 
+|#
+
 (define (valof-cps expr env-cps k)
   (match expr
     [`,y #:when (symbol? y) (env-cps y k)]
@@ -69,12 +69,12 @@ you one of your interpreter's clauses
      (valof-cps nexp env-cps
                 (λ (v)
                   (k (zero? v))))]
-    [`(if ,te ,ce ,ae) 
-     (valof-cps te env-cps 
+    [`(if ,te ,ce ,ae)
+     (valof-cps te env-cps
                 (λ (b)
                   (if b
                       (valof-cps ce env-cps k)
-                      (valof-cps ae env-cps k))))] 
+                      (valof-cps ae env-cps k))))]
     [`(lambda (,x) ,b)
      (k (λ (a k)
           (valof-cps b (λ (y k^)
@@ -105,13 +105,13 @@ you one of your interpreter's clauses
    (λ (v) v)))
 
 (check-true* equal?
-  [(eval/cps '(((lambda (f) 
+  [(eval/cps '(((lambda (f)
           ((lambda (x) (x x))
            (lambda (x) (f (lambda (y) ((x x) y))))))
         (lambda (!)
           (lambda (n)
             (if (zero? n)
-                1 
+                1
                 (* n (! (sub1 n)))))))
        5))
   120])
@@ -126,7 +126,7 @@ you one of your interpreter's clauses
 ;; not be the case for your environment and continuations,
 ;; however. The test suite is inadequate, you must add your own.
 
-#| 
+#|
 
 To further clarify this transformation, we have transformed here for
 you one of your interpreter's clauses
@@ -141,9 +141,9 @@ you one of your interpreter's clauses
               ((ve2 env-cps)
                (λ (v2)
                  (k (* v1 v2)))))))))]
-|# 
+|#
 
-;; 3a. 
+;; 3a.
 
 #|
 
@@ -151,11 +151,11 @@ Think: Why is it that we can ensure all calls to valof-pe are finished
 completed before ever evaaluating an environment. Why /can't/ we make
 that guarantee about environments before continuations?
 
-Answer: 
+Answer:
 
 |#
 
-;; 3b. 
+;; 3b.
 
 #|
 
@@ -163,26 +163,27 @@ Think: why is it okay to evaluate these sub-expressions out of order?
 Why are we (why am I) not concerned about causing unfortunate infinite
 loops?
 
-Answer: 
+Answer:
 
 |#
 
 
+
 (define (eval/pe expr)
-  (((lvalof-pe expr)
+  (((valof-pe expr)
     (λ (y)
       (λ (k)
         (error 'valof-cps "badness"))))
    (λ (v) v)))
 
 (check-true* equal?
-  [(eval/pe '(((lambda (f) 
+  [(eval/pe '(((lambda (f)
                  ((lambda (x) (x x))
                   (lambda (x) (f (lambda (y) ((x x) y))))))
                (lambda (!)
                  (lambda (n)
                    (if (zero? n)
-                       1 
+                       1
                        (* n (! (sub1 n)))))))
               5))
    120])
