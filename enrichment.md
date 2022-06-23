@@ -66,6 +66,8 @@ classes: wide
 - [History of Lambda Calculus and Combinatory Logic](https://hope.simons-rock.edu/~pshields/cs/cmpt312/cardone-hindley.pdf)
 - [SKI Combinator Tetris](https://dirk.rave.org/combinatris/)
 - [Care for your pet combinator]({{ site.baseurl }}/assets/docs/hindley-seldin-combinatory-a4.pdf)
+- [Why concatenative programming matters](https://evincarofautumn.blogspot.com/2012/02/why-concatenative-programming-matters.html)
+
 
 - van Emden on [relational programming, logic beyond prolog](https://arxiv.org/pdf/1412.3480.pdf)
 - [Purity](https://www.metalevel.at/prolog/purity) and [programming purely in Prolog](http://www.complang.tuwien.ac.at/ulrich/papers/PDF/2008-fdpe.pdf)
