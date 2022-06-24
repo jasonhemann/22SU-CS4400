@@ -165,7 +165,9 @@
 ;; else:
 
 ;; mixins
-;; design patterns (e.g. visitor)
+;; interfaces
+;; multiple inheritance
+;; actors
 ;; meta-object protocol
 ;; `this` (the variant in class we described doesn't mix with late-binding; think about how you would add it)
 ;; contracts
