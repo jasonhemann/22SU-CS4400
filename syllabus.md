@@ -18,11 +18,11 @@ After this course you will know how to:
 
 
   1. Learn and utilize central PL concepts such as evaluation, scope,
-     binding, and defunctionalization.
+	 binding, and defunctionalization.
   1. Implement interpreters and extend them to evaluate new syntactic
-     forms.
+	 forms.
   1. Apply correctness-preserving program transformation techniques to
-     guarantee program properties.
+	 guarantee program properties.
   1. Evaluate and critique the impact of language design decisions.
 
 *This course is fast paced.* The course's material accumulates,
@@ -62,17 +62,17 @@ hours]({{ site.baseurl }}/office-hours/).
 
 I will assign overall course grades as follows:
 
-     | Category                  | Weight (%) |
-     |---------------------------+------------|
-     | Lecture Quizzes           |         20 |
-     | Exams                     |         35 |
-     | Homework*                 |         45 |
-     | TRACE                     |          1 | 
-     | Total                     |        101 |
+	 | Category                  | Weight (%) |
+	 |---------------------------+------------|
+	 | Lecture Quizzes           |         20 |
+	 | Exams                     |         35 |
+	 | Homework*                 |         45 |
+	 | TRACE                     |          1 |
+	 | Total                     |        101 |
 
 We (I) will calculate overall numeric grade according to the
 [Northeastern grading schema]({{ site.baseurl
-}}/assets/images/northeastern-grading-schema.jpg). Your final grades
+}}/assets/images/northeastern-grading-scheme.jpg). Your final grades
 will be at least as good as the standard calculation for As, Bs, Cs,
 etc. To assign final letter grades at the end of the term I sum and
 chart the numeric scores, and break students' grades where we see
@@ -82,7 +82,7 @@ of your grade than what you calculate from the raw score.
 
 I will base some portions of your homework and lecture quiz
 grades on completion and submission of the relevant exercises. I will
-base the remaining portion of each on correctness. 
+base the remaining portion of each on correctness.
 
 
 ### Total Running Grade Calculation
@@ -201,7 +201,7 @@ dessert problems as well. These are also optional, and vary from
 suuuper tricky to things we haven't yet solved to our satisfaction.
 
 
-### Exams 
+### Exams
 
 You will have two long-form in-class exams. We calibrate our exams to
 make full use of the grading spectrum, and assume you fully understand
@@ -224,7 +224,7 @@ or anonymity of the TRACE system, if 85% or more of the enrolled
 students complete these TRACE evaluations, then I shall add a point
 onto the class-wide final average.
 
-## Project 
+## Project
 
 This course culminates in a final project. This project also presumes
 an understanding of the prior material in the course, and acts as a
@@ -279,7 +279,7 @@ notified of any such accommodation prior to recording. Any
 distribution of such recordings is prohibited. Obviously I cannot
 [stop you](https://obsproject.com/), but it's to both our benefits.
 
-## Additional Support 
+## Additional Support
 
 In addition to lecture, we provide the following additional resources
 for students to avail themselves. Do consider taking regular advantage
@@ -287,11 +287,11 @@ of them.
 
 ### Scheduled Office Hours
 
-Course personnel will make ourselves available online for 4-6 hours of 
-office hours available weekly, concentrated toward assignment due dates. 
-If our office hours schedule is particularly ill-suited to your class 
-schedule, let me know and we may be able to adjust it. I'll also be 
-available in West Village H #326 during my office hours. Please see 
+Course personnel will make ourselves available online for 4-6 hours of
+office hours available weekly, concentrated toward assignment due dates.
+If our office hours schedule is particularly ill-suited to your class
+schedule, let me know and we may be able to adjust it. I'll also be
+available in West Village H #326 during my office hours. Please see
 the [office hours page]({{ site.baseurl }}/office-hours/) for the
 most current and detailed policies.
 
@@ -323,7 +323,7 @@ homework question. For more sensitive questions, or administrative
 issues that should addressed in private, please email me at the
 address listed on the front of this syllabus.
 
-### Optional Texts 
+### Optional Texts
 
 There are *no required texts* for this class. Simply put, no companion
 textbooks mirror this course's development of these topics. For
@@ -378,9 +378,9 @@ appropriate measures are taken and resources are made available to the
 student who may have been harmed. Protecting a student’s privacy is of
 utmost concern, and all involved will only share information with
 those that need to know to ensure the University can respond and
-assist. 
+assist.
 
-## Academic Accommodations 
+## Academic Accommodations
 
 If you have accommodations from the [Disability Resource Center
 (DRC)](http://www.northeastern.edu/drc/) please submit your Professor
@@ -400,7 +400,7 @@ and learning over the semester. These include Racket, Khoury Office
 Hours, and Piazza. Please see the [technology page]({{ site.baseurl
 }}/tech/) for more details.
 
-## Acknowledgments 
+## Acknowledgments
 
 I derived many of our course's lecture's contents and topics, as well
 as assignments, from [Dan
