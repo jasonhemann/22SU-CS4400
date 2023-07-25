@@ -220,9 +220,9 @@ all the elements in s1 that are not in s2.
 19. In mathematics, the power set of any set S, denoted P(S), is the
 set of all subsets of S, including the empty set and S itself. The
 procedure combinations takes a list and returns the power set of the
-elements in the list. Implementations may different in the exact order
-of their results' sublists. You should not use Racket's combinations
-in your solution.
+elements in the list. Implement your own version of combinations.
+Implementations may different in the exact order of their results'
+sublists. You should not use Racket's combinations in your solution.
 
 |# 
 

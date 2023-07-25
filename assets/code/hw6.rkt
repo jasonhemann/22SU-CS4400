@@ -116,7 +116,7 @@
            (cond
              ((empty? n*) 1)
              ((zero? (car n*)) 0)
-             (else (my-* (car n*) (mult (cdr n*))))))))
+             (else (my-* (car n*) (m (cdr n*))))))))
       (m n*)))
 > (define (mult/acc n*)
     (letrec
