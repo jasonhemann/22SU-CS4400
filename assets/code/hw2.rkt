@@ -74,8 +74,8 @@ function. It should behave like Racket's list-ref.
 
 ;; The inner, nested function nth-cdr needs its body. Complete the
 ;; list-ref's definition by completing a naturally-recursive
-;; implementation of nth-cdr, so that the following tests pass. You
-;; must not modify the provided code beyond adding a body. You may of
+;; implementation of nth-cdr, so that it behaves like Racket's list-ref.
+;; You must not modify the provided code beyond adding a body. You may of
 ;; course add newlines as needed. Do not call list-ref, either ours or
 ;; Racket's, in your definition. Follow our pattern: figure out the
 ;; base case, write the natural recursion, and figure out what to do
@@ -128,7 +128,7 @@ on this problem. Cycles are absolutely bad data.
 
 5. Define and test a procedure lambda->lumbda that takes a
 lambda-calculus expression and returns the expression unchanged with
-the exception that each lambda as a keyword has been replaced with the
+the exception that each lambda *as a binder* has been replaced with the
 word lumbda (notice you should not change declarations of a variable
 `lambda`).
 
