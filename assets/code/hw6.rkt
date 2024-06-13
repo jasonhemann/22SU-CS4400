@@ -311,8 +311,8 @@ s
        (fib fib n))
      (λ (fib n)
        (cond
-     [(< n 2) n]
-     [else (+ (fib fib (sub1 n)) (fib fib (sub1 (sub1 n))))])))))
+         [(< n 2) n]
+         [else (+ (fib fib (sub1 n)) (fib fib (sub1 (sub1 n))))])))))
 
 ;; 11. Define and test a procedure unfold-cps that is a CPSed version
 ;; of the following unfold procedure:
@@ -323,9 +323,9 @@ s
        ((h h) seed '()))
      (λ (h)
        (λ (seed ans)
-     (if (p seed)
-         ans
-         ((h h) (g seed) (cons (f seed) ans))))))))
+         (if (p seed)
+             ans
+             ((h h) (g seed) (cons (f seed) ans))))))))
 
 ;; An example of its use is demonstrated below:
 
@@ -365,12 +365,12 @@ s
 (define pascal
   (λ (n)
     (let ((pascal
-           (λ (pascal)
-             (λ (m a)
-               (cond
-                 [(> m n) '()]
-                 [else (let ((a (+ a m)))
-                         (cons a ((pascal pascal) (add1 m) a)))])))))
+            (λ (pascal)
+              (λ (m a)
+                (cond
+                  [(> m n) '()]
+                  [else (let ((a (+ a m)))
+                          (cons a ((pascal pascal) (add1 m) a)))])))))
       ((pascal pascal) 1 0))))
 
 
