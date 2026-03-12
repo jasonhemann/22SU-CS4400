@@ -254,10 +254,10 @@ There are plenty of derivations of an X combinator. (It's called "X"
 in the business.) See
 [Fokker](https://link.springer.com/article/10.1007%2FBF03180572) ["The
 systematic construction of a one-combinator
-basis"](http://www.cs.uu.nl/research/techreps/repo/CS-1989/1989-14.pdf)
+basis"](https://link.springer.com/article/10.1007/BF03180572)
 for more details.
 
-![Comparison]({{ site.baseurl }}assets/images/one-point-combinator-comparison.jpeg)
+![Comparison]({{ site.baseurl }}/assets/images/one-point-combinator-comparison.jpeg)
 
 
 ### Iota and Jot 

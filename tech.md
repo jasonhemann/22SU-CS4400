@@ -60,7 +60,7 @@ links to its `.md` file in this repository.
 
 If you are unfamiliar with making pull requests, you can find plenty of documentation both from your terminal
 and [on the
-web](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+web](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 ## Gradescope
 
@@ -72,7 +72,7 @@ server that you might have used in other classes. You will see this item in the 
 I intend to broadcast our course meetings via [Northeastern Zoom](https://northeastern.zoom.us/). I
 prefer it over MS Teams for a variety of reasons. Not the least of
 which is the instantaneous and anonymous feedback that it provides,
-via [Dial testing](http://dialsmith.com/blog/dial-tests-vs-focus-groups-how-are-they-different/). You will find it helpful to have two
+via [Dial testing](https://www.dialsmith.com/blog/dial-testing-vs-focus-groups-how-are-they-different/). You will find it helpful to have two
 internet-enabled devices with at hand when you are attending class
 remotely, once for viewing the class and a second for answering poll
 questions.
