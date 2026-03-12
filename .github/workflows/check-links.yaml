@@ -14,3 +14,4 @@ jobs:
         with:
           paths: https://hemann.pl/22SU-CS4400
           config: linkinator.config.json
+          timeout: 15000
