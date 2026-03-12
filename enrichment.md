@@ -41,7 +41,7 @@ classes: wide
 - [Someone else's explanation of the CPS transformation](https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)§4.2
 - [A first-order one-pass CPS transformation](https://link.springer.com/content/pdf/10.1007/3-540-45931-6_8.pdf)
 - [Why continuations are coming to Java](https://www.youtube.com/watch?v=9vupFNsND6o)
-- [No-brainer CPS Conversion](https://www.ccs.neu.edu/home/shivers/papers/nobrainer-cps.pdf)
+- [No-brainer CPS Conversion](https://web.archive.org/web/20221206074703/https://www.ccs.neu.edu/home/shivers/papers/nobrainer-cps.pdf)
 
 
 - [Lambda: the Ultimate GOTO](https://web.archive.org/web/20110718095430/http://repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-443.pdf)
