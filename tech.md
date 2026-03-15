@@ -95,7 +95,7 @@ Go to [https://web.archive.org/web/20231012021843/https://vpn.northeastern.edu/]
 install the GlobalProctect VPN client on your machine. You will need
 this to use the VDI linux machines. If you have difficulty please
 consult the [relevant ITS KB articles](http://northeastern.service-now.com/tech?id=kb_category&kb_category=07d42f714f02cf0099c2fd511310c7b2), and if necessary [reach out to
-ITS support](https://web.archive.org/web/20220430013611/http://its.northeastern.edu/support/#et-boc:~:text=Still%20Need%20Support%3F).
+ITS support](https://its.northeastern.edu/support/).
 
 ## VDI Linux Machines 
 
@@ -127,4 +127,3 @@ language.
 Prepare yourself to download and install other packages as necessary
 to make our test suites run. You will not need any additional packages
 to complete your homework, nor should you use them. 
-

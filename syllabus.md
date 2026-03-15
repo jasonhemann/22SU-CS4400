@@ -390,8 +390,7 @@ access in this course. I am eager to discuss ways we can ensure your
 full participation.
 
 I encourage all students who may benefit from learning more about DRC
-services to [contact the
-DRC](https://web.archive.org/web/20210327072511/http://www.northeastern.edu/drc/#fp-blog-entry:~:text=Contact%20Information).
+services to [contact the DRC](https://www.northeastern.edu/drc/).
 
 ## Technology and Platforms
 
@@ -404,7 +403,7 @@ Hours, and Piazza. Please see the [technology page]({{ site.baseurl
 
 I derived many of our course's lecture's contents and topics, as well
 as assignments, from [Dan
-Friedman](https://legacy.cs.indiana.edu/~dfried/)'s 311 at Indiana
+Friedman](https://web.archive.org/web/20230912060914/https://legacy.cs.indiana.edu/~dfried/)'s 311 at Indiana
 University. We use [Krishnamurthi's `gradescope-racket` autograde
 framework](https://github.com/shriram/gradescope-racket). [Lindsey
 Kuper](https://users.soe.ucsc.edu/~lkuper/) inspires some of this site
