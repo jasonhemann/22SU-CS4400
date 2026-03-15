@@ -247,7 +247,7 @@ cartesian-product in your solution.
 using foldr. That is, the bodies of your definitions should not refer
 to themselves. The names should be as follows.
 
-I recommend this (http://www.cs.nott.ac.uk/~pszgmh/fold.pdf) treatise
+I recommend this (https://web.archive.org/web/20180628032715/http://www.cs.nott.ac.uk/~pszgmh/fold.pdf) treatise
 on fold operators. It contains answers to several of the above
 sub-problems. It will also teach you about programming with
 foldr. There are stunningly beautiful definitions of the last two
