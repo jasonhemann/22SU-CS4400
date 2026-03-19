@@ -37,10 +37,10 @@ have the same concern or be feeling the same way.
  contrary to FERPA or your rights under the Northeastern University
  Handbook, please do consider if this can be a Piazza message.
 
-## [KCCS/CCIS/CCS Github](http://ccs.github.neu.edu)
+## [KCCS/CCIS/CCS Github](https://github.khoury.northeastern.edu/)
 
 I will be utilizing the school's Enterprise git at
-[http://ccs.github.neu.edu]. You should have access to that with your
+[https://github.khoury.northeastern.edu/](https://github.khoury.northeastern.edu/). [EDIT: The original course page linked to `http://ccs.github.neu.edu`, which is no longer live; this page now points to the current Khoury enterprise Git host instead.] You should have access to that with your
 KCCS account. I will expect you to know how to access this, for your
 own benefits and for coursework. If you are not familiar, please
 consult the Khoury Systems group's [documentation and

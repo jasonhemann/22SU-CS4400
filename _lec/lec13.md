@@ -36,9 +36,7 @@ Handling
 # Recap continuation-passing Style, and implement CPSing an interpreter.
 
 For a nice resource walking you through some complex examples, please
-see [the following](
-https://www.cs.bgu.ac.il/~ppl202/wiki.files/class/notebook/4.2CPS.html)
-(hat tip to a 4400 student).
+see the following (hat tip to a 4400 student).
 
 
 ## Two kinds of forms: CPSing as a function definition, vs CPSing as an expression.

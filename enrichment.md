@@ -19,7 +19,7 @@ classes: wide
 
 - [Pattern matching coming to Python](https://www.python.org/dev/peps/pep-0636/)
 
-- Hutton's [Tutorial on `fold` operators](https://web.archive.org/web/20180628032715/http://www.cs.nott.ac.uk/~pszgmh/fold.pdf)
+- Hutton's [Tutorial on `fold` operators](https://people.cs.nott.ac.uk/pszgmh/fold.pdf)
 - [On Barron & Strachey's Cartesian product function](https://www.brics.dk/RS/07/14/BRICS-RS-07-14.pdf)
 
 - The [feeling you should get looking at our interpreter](https://www.youtube.com/watch?v=Ow9AtuIuMLw)
@@ -38,7 +38,7 @@ classes: wide
 - [Hunting the history of Moses Schönfinkel](https://writings.stephenwolfram.com/2020/12/where-did-combinators-come-from-hunting-the-story-of-moses-schonfinkel/)
 - [Kleene's "Church predecessor" via a trip to the dentist](http://link.springer.com/chapter/10.1007%2FBFb0062850)
 
-- [Someone else's explanation of the CPS transformation](https://web.archive.org/web/20211025175830/https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)§4.2
+- [Someone else's explanation of the CPS transformation](https://web.archive.org/web/20211025175830if_/https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)§4.2
 - [A first-order one-pass CPS transformation](https://link.springer.com/content/pdf/10.1007/3-540-45931-6_8.pdf)
 - [Why continuations are coming to Java](https://www.youtube.com/watch?v=9vupFNsND6o)
 - [No-brainer CPS Conversion](https://web.archive.org/web/20221206074703/https://www.ccs.neu.edu/home/shivers/papers/nobrainer-cps.pdf)
@@ -63,7 +63,7 @@ classes: wide
 - [Philosophy of Computer Science](https://cse.buffalo.edu/~rapaport/Papers/phics.pdf) (Draft text)
 - [Logicomix](https://en.wikipedia.org/wiki/Logicomix) (It's a comic about Russell and early 20th century mathematical logic. ᕕ( ᐛ )ᕗ)
 
-- [History of Lambda Calculus and Combinatory Logic](https://web.archive.org/web/20240617124312/https://hope.simons-rock.edu/~pshields/cs/cmpt312/cardone-hindley.pdf)
+- [History of Lambda Calculus and Combinatory Logic](https://web.archive.org/web/20240617124312if_/https://hope.simons-rock.edu/~pshields/cs/cmpt312/cardone-hindley.pdf)
 - [SKI Combinator Tetris](https://dirk.rave.org/combinatris/)
 - [Care for your pet combinator]({{ site.baseurl }}/assets/docs/hindley-seldin-combinatory-a4.pdf)
 - [Why concatenative programming matters](https://evincarofautumn.blogspot.com/2012/02/why-concatenative-programming-matters.html)
@@ -77,7 +77,7 @@ classes: wide
 
 Additional online textbooks with relevant sections/explanations.
 
-- [PPL Notes](https://web.archive.org/web/20211025175830/https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)
+- [PPL Notes](https://web.archive.org/web/20211025175830if_/https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)
 - Krishnamurthi's [PLAI](http://cs.brown.edu/courses/cs173/2012/book/)
 - [Barzilay's PL class notes](https://pl.barzilay.org/lec98)
 

@@ -390,7 +390,7 @@ access in this course. I am eager to discuss ways we can ensure your
 full participation.
 
 I encourage all students who may benefit from learning more about DRC
-services to [contact the DRC](https://www.northeastern.edu/drc/).
+services to [contact the DRC](https://web.archive.org/web/20210327072511/http://www.northeastern.edu/drc/).
 
 ## Technology and Platforms
 
